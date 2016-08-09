@@ -21,6 +21,8 @@ def bugEdit(request):
         #     return HttpResponse("提交成功!!")
     else:
 
+        print('')
+        print('')
         pass
         # recordform = RecordForm()
     return render(request,'new-debug.html',locals())
