@@ -1,0 +1,80 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>新添bug</title>
+		<link rel="stylesheet" href={% static "css/common.css" %} />
+		<link rel="stylesheet" href={% static "css/style.css" %} />
+		<style type="text/css">
+			input[type='text']{
+				display: block;
+			    margin: 20px;
+			    height: 40px;
+			    width: 400px;
+			    padding-left: 10px;
+			    border-radius: 5px;
+			}
+			textarea{
+				height: 400px;
+			    width: 600px;
+			    margin: 20px;
+			    display: block;
+			}
+			select{
+				width: 200px;
+			    height: 30px;
+			    display: block;
+			    margin: 20px;
+			    padding-left: 10px;
+			    border-radius: 5px;
+			}
+			input[type='submit']{
+				width: 80px;
+			    height: 30px;
+			    background-color: rgba(37,203,115,0.73);
+			    color: #fff;
+			    margin: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<form method="post" action="/bug/">
+            {% csrf_token %}
+			<input type="text" placeholder="xxx" name="title"/>
+			<textarea name="textarea"></textarea>
+			<select name="select">
+				<option value="1">1</option>
+				<option value="2">2</option>
+			</select>
+            <input type="submit" value="提交" />
+		</form>
+
+		<script type="text/javascript" src={% static "js/jquery-2.1.1.min.js" %} ></script>
+{#		<script type="text/javascript">#}
+{#			$("input[type='submit']").on("click",function(){#}
+{#				var title = $("input[type='text']").val();#}
+{#				var content = $("textarea").val();#}
+{#				var sel = $("select option:selected").val();#}
+{#				var data = {#}
+{#					"title": title,#}
+{#					"content": content,#}
+{#					"sel": sel#}
+{#				};#}
+{#				$.ajax({#}
+{#				    url: "",    //请求的url地址#}
+{#				    dataType: "json",   //返回格式为json#}
+{#				    async: true, //请求是否异步，默认为异步，这也是ajax重要特性#}
+{#				    data: data,    //参数值#}
+{#				    type: "GET",   //请求方式#}
+{#				    success: function(req) {#}
+{#				        //请求成功时处理#}
+{#				    },#}
+{#				    error: function() {#}
+{#				        //请求出错处理#}
+{#				    }#}
+{#				});#}
+{#			});#}
+{#		</script>#}
+	</body>
+</html>

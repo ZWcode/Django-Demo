@@ -1,0 +1,166 @@
+
+body{
+	width: 100%;  
+	background-image:url(../img/u0.jpg);    
+	background-attachment: fixed;
+	background-position: left top;
+   -moz-background-size: cover; /*  Firefox 3.6 */
+   -o-background-size: cover;/* Opera 9.5 */
+   -webkit-background-size: cover;/* Safari 3.0 */
+   background-size: cover;/*  Firefox 4.0 and other CSS3-compliant browsers */
+   -moz-border-image: url(../img/u0.jpg) 0; /* Firefox 3.5 */
+   filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/u0.jpg', sizingMethod='scale');/* for < ie9 */
+
+}
+header{
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+    font-size: 30px;
+    background-color: rgba(255,255,255,0.5);
+    /*background-color: #89d789;*/
+    color: #666;
+    overflow: hidden;
+}
+header>nav{
+    height: 50px;
+    float: right;
+    margin-right: 20px;
+    font-size: 20px;
+}
+nav>a{
+	color: #666;
+}
+header>input{
+	width: 94%;
+	height: 40px;
+	display: block;
+	margin: 10px auto;
+	padding-left: 10px;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+header>input:focus{
+	border-radius: 5px;
+	border: 1px solid #3EAAEF;
+}
+.register{
+    width: 202px;
+    margin: 200px auto;
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 0 48px 48px;
+    position: relative;
+}
+.register>h3{
+	line-height: 48px;
+	font-size: 20px;
+}
+.register>input{
+    width: 188px;
+    height: 30px;
+    border: 1px solid #000;
+    margin: 10px 0 0;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.register>button{
+	width: 200px;
+	height: 30px;
+	background-color: #000;
+	color: #fff;
+	margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.register>a{
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    line-height: 20px;
+    padding-left: 60px;
+	background-image: url(../img/user-ico.png);
+	background-size: 20px 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #000;
+}
+
+section.debug-list{
+	width: 100%;
+}
+.debug-list .list-item{
+	display: block;
+	height: 70px;
+    background-color: rgba(255,255,255,0.5);
+    color: #666;
+    margin: 10px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.list-item>h3{
+	line-height: 40px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.list-item>h3>span{
+	line-height: 30px;
+	font-size: 14px;
+	display: inline-block;
+	color: #fff;
+	background-color: #25CB73;
+	padding: 0 20px;
+	float: right;
+	margin: 5px;
+}
+.list-item>p{
+	line-height: 30px;
+	font-size: 20px;
+	text-align: right;
+}
+
+.edit-area{
+    height: 300px;
+    border: 1px solid transparent;
+    overflow-y: scroll;
+    font-size: 16px;
+    margin: 20px;
+    line-height: 30px;
+}
+.edit-area:focus{
+	border: 1px solid #3EAAEF;
+	
+}
+.operation{
+	width: 200px;
+	height: 40px;
+	margin: 40px auto;
+}
+.operation>button{
+	width: 80px;
+	height: 30px;
+	background-color: rgba(37,203,115,0.73);
+	color: #fff;
+}
+.operation>button:first-child{
+	margin-right: 36px;
+}
+.state{
+	height: 40px;
+	padding-left: 20px;
+	color: #fff;
+}
+.state>select{
+	width: 200px;
+	height: 36px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	padding-left: 10px;
+}
+.state>select>option{
+	height: 36px;
+}
+
+
